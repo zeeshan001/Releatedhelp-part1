@@ -1,0 +1,16 @@
+.slide-1,
+#ie6 .slide-1{
+	background:url(../images/slide-4.jpg) center top no-repeat;
+}
+.slide-2,
+#ie6 .slide-2{
+	background:url(../images/slide-3.jpg) center top no-repeat;
+}
+.slide-3,
+#ie6 .slide-3{
+	background:url(../images/slide-2.jpg) center top no-repeat;
+}
+.slide-4,
+#ie6 .slide-4{
+	background:url(../images/slide-1.jpg) center top no-repeat;
+}

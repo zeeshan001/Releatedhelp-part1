@@ -1,0 +1,200 @@
+html,body,div,span,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,q,em,img,small,strong,
+dl,dt,dd,ol,ul,li,fieldset,form,label,legend{border:0;outline:0;margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+ol,ul{list-style:none}
+:focus{outline:0}
+input,textarea{margin:0;outline:0;}
+textarea{overflow:auto; resize:none;}
+table{border-collapse:collapse;border-spacing:0}
+/* End Reset */
+
+/* html5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+
+/* Default Font Styles
+______________________*/
+body, input, select, textarea{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000;
+	line-height:130%;
+}
+
+/* Headings
+______________________*/
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+
+
+/* Links
+______________________*/
+a{ }
+a:hover { }
+
+/* p, blockquote, address
+______________________*/
+p{
+
+}
+
+/* Lists
+______________________*/
+ul{
+
+}
+ul li{
+
+}
+ol{
+
+}
+ol li{
+
+}
+
+
+/* Layout 
+______________________*/
+#container-fluid{
+	
+}
+#container-fix{
+	margin:0 auto;
+	width:960px;
+}
+.content-width{
+	width:960px;
+	margin:0 auto;
+}
+
+/* Header
+______________________*/
+#header-wrap{
+
+}
+#header{
+
+}
+#header-left{
+
+}
+#header-right{
+
+}
+
+/* Navigation
+______________________*/
+nav{
+	
+}
+#nav{
+}
+#nav li{
+
+}
+#nav li.active{
+
+}
+#nav li.nav-first{
+
+}
+#nav li.nav-last{
+
+}
+#nav a{
+
+}
+#nav a:hover{
+
+}
+
+/* Sub Navigation
+______________________*/
+#nav .nav-sub{
+
+}
+#nav .nav-sub li{
+
+}
+#nav .nav-sub li.active{
+
+}
+#nav .nav-sub li.nav-sub-first{
+
+}
+#nav .nav-sub li.nav-sub-last{
+
+}
+
+/*  Main Area
+-------------------------------------- */
+#main-wrap{
+
+}
+#main{
+
+}
+
+
+/*  Footer 
+-------------------------------------- */
+#footer-wrap{
+
+}
+#footer{
+
+}
+#footer-left{
+
+}
+#footer-center{
+
+}
+#footer-right{
+
+}
+
+.fl{ float:left}
+.fr{ float:right}
+.cl{ clear:both; font-size:0; height:0; }
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* Alignments */
+.center { text-align:center }
+.right { text-align:right }
+.top {vertical-align:top }
+.middle { vertical-align:middle }
+
+@media (max-width: 979px) { 
+    
+}
+
+@media (max-width: 480px) { 
+    
+}
+
+@media (max-width: 320px) { 
+    
+}

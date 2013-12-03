@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html>
+<!--<![endif]-->
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Home Page</title>
+    
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/cloudzoom.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/cloudzoom.js"></script>
+    <script type="text/javascript">
+            CloudZoom.quickStart();
+        </script>
+    
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="css/ie.css" />
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    <![endif]-->
+    
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="js/belated.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body id="page-name">
+
+<div class="content-width">
+	<img class = "cloudzoom" src = "images/small/image1.jpg"
+             data-cloudzoom = "zoomImage: 'images/large/image1.jpg'" >
+        <br/>
+        <img class = 'cloudzoom-gallery' src = "images/thumbs/image1.jpg" data-cloudzoom = "useZoom: '.cloudzoom', image: 'images/small/image1.jpg', zoomImage: 'images/large/image1.jpg' " >
+        <img class = 'cloudzoom-gallery' src = "images/thumbs/image2.jpg" data-cloudzoom = "useZoom: '.cloudzoom', image: 'images/small/image2.jpg', zoomImage: 'images/large/image2.jpg' " >
+        <img class = 'cloudzoom-gallery' src = "images/thumbs/image3.jpg" data-cloudzoom = "useZoom: '.cloudzoom', image: 'images/small/image3.jpg', zoomImage: 'images/large/image3.jpg' " >
+
+</div>
+
+</body>
+</html>

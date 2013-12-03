@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+<title>{title}</title>
+<meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
+    
+    <script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider({
+				directionNavHide: false,
+				controlNav: false,
+				effect: 'fade'
+				
+			});
+		});
+    </script>
+
+
+<style>
+/* The Nivo Slider styles */
+.slider-wrap{
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.35);
+    margin: 0 auto 20px;
+    position: relative;
+    width: 830px;
+}
+#slider {
+    width:830px;
+    height:450px;
+	position:relative;
+}
+.nivo-directionNav a {
+	position:absolute;
+	z-index:9;
+	cursor:pointer;
+	background:url(back.png) no-repeat;
+	height: 56px;
+	margin-top: -28px;
+	top: 50%;
+	width: 36px;
+	font-size:0;
+}
+.nivo-prevNav {
+	left:-40px;
+}
+	.nivo-prevNav:hover{
+		background:url(back-hover.png) no-repeat;
+	}
+.nivo-directionNav .nivo-nextNav {
+	right:-40px;
+	background:url(next.png) no-repeat;
+}
+	.nivo-directionNav .nivo-nextNav:hover{
+		background:url(next-hover.png) no-repeat;
+	}
+
+
+</style>
+    
+    
+</head>
+<body class='wsite-theme-light'>
+<div id="S-bg"><img alt="" src="/files/theme/bg1.jpg" width="100%" height="100%"></div>
+    <div id="S-page">        
+    <div id="S-header">{top:content}</div>
+              <div class="clear"></div>        
+        <div id="S-content">            
+        
+        	<!--<div class="slider-wrap">
+            	<div id="slider" class="nivoSlider">
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="/files/theme/S-slide-1.jpg" alt=""/></a>
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="/files/theme/S-slide-2.jpg" alt=""/></a>
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="/files/theme/S-slide-3.jpg" alt=""/></a>
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="/files/theme/S-slide-4.jpg" alt=""/></a>
+                </div>
+            </div> -->
+            
+            <div class="slider-wrap">
+            	<div id="slider" class="nivoSlider">
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="S-slide-1.jpg" alt=""/></a>
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="S-slide-2.jpg" alt=""/></a>
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="S-slide-3.jpg" alt=""/></a>
+                    <a href="http://rastest32012.weebly.com/home.html"><img src="S-slide-4.jpg" alt=""/></a>
+                </div>
+            </div>
+            
+         <div class="S-text-area">
+               {content}</div>
+        </div>
+        <ul id="S-menu">{menu}
+        </ul>
+        <div class="S-footer">{footer}</div>
+    </div>
+
+
+</body>
+</html>		

@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>demo-error</title>
+    
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="css/ie.css" />
+    <![endif]-->
+    
+    <!--[if lte IE 6]>
+    <script src="js/belated.js" type="text/javascript"></script>
+    <![endif]-->
+    
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+		
+<!--header starts here -->
+<div class="header-wrap">
+    <div class="container">
+    	<div class="header">
+        	<div class="row">
+            	<div class="span4">
+                	<a href="#"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="span20">
+                
+                	<div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="container">
+                                <div class="nav-collapse">
+                                    <ul class="nav">
+                                        <li><a href="#">Andrew</a></li>
+                                        <li><a href="#">My Games</a></li>
+                                        <li><a href="#" class="btn btn-danger">Logout</a></li>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--navbar -->
+                    
+                </div>
+            </div>
+    	</div>
+    </div>
+</div>
+<!--header ends -->
+
+
+<!--main contents area starts here -->
+<div class="main-wrap">
+    <div class="container">
+    	<div class="main">
+        	
+            <div class="title-section">
+            	<div class="row">
+                	<div class="span18">
+                    	<h2>Game Management</h2>
+                    </div>
+                    <div class="span6 right">
+                    	<div class="game-row mt-5">
+                    		<span class="label label-info">Draft</span>
+                        </div>
+                    </div>
+                </div>
+            </div><!--title-section -->
+            
+            
+            <div class="contents-wrap game-info">
+            	<div class="row">
+                	<div class="span4">
+                    	<div class="step-section">
+                    		<h4>STEPS</h4>
+                        	<ul>
+                            	<li>
+                                	<a data-toggle="modal" href="#myModal" class="sidebar-link-tigger">&nbsp;</a>
+                                	<a data-toggle="modal" href="#myModal" class="active">
+                                    	<img src="images/icon-1.png" />
+                                        <span>Game Info</span>
+                                    </a>
+                                </li>
+                                <li>
+                                	
+                                	<a data-toggle="modal" href="#myModal">
+                                    	<img src="images/icon-2.png" />
+                                        <span>Mission List</span>
+                                    </a>
+                                </li>
+                                <li>
+                                	<a data-toggle="modal" href="#myModal">
+                                    	<img src="images/icon-3.png" />
+                                        <span>Credits</span>
+                                    </a>
+                                </li>
+                                <li>
+                                	<a data-toggle="modal" href="#myModal">
+                                    	<img src="images/icon-4.png" />
+                                        <span>Start &amp; Stop</span>
+                                    </a>
+                                </li>
+                                <li>
+                                	<a data-toggle="modal" href="#myModal">
+                                    	<img src="images/icon-5.png" />
+                                        <span>Activity Feed</span>
+                                    </a>
+                                </li>
+                                <li>
+                                	<a data-toggle="modal" href="#myModal">
+                                    	<img src="images/icon-6.png" />
+                                        <span>Leaderboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                	<a data-toggle="modal" href="#myModal">
+                                    	<img src="images/icon-7.png" />
+                                        <span>Photo</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="span11">
+                    	<div class="picture-section">
+                        	<div class="row">
+                            	<div class="span4">
+                                	<a href="#" class="game-photo"><img src="images/game-pic.jpg" alt="" /></a>
+                                </div>
+                                <div class="span7 upload-section">
+                                
+                                	<input type="file" value="" id="upload-trigger" />
+                                    <a href="#" id="upload" class="btn" style="display:none">Upload Photo</a>
+                                    <a class="link btn" href="javascript:void">Upload photo</a> <br />
+                                    <span id="upload-detail"></span>
+                                    <p class="mt-5">
+                                    	Photo must be square and <br />
+                                        in .png .jpg or .bmp formats.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="game-form">
+                        	<p class="clearfix">
+                            	<label>Game Name</label>
+                                <span class="error">Game name is Required</span>
+                                <input type="text" id="game-name" class="text-field span5" onfocus="if(this.value=='ex:ACME Sales Team') this.value='';" onblur="if(this.value=='') this.value='ex:ACME Sales Team';" value="ex:ACME Sales Team" />
+                                <span class="max-number"><span id="charecterCount">0</span> charecter (40 max)</span>
+                            </p>
+                            <p class="clearfix">
+                            	<label>Game Description</label>
+                                <span class="error">Game Description is Required</span>
+                                <textarea id="game-description" class="textarea2 height-100 span5" cols="2" rows="20">ex: Last place grabs coffee for the winners!</textarea>
+                                <span class="max-number"><span id="descCharecterCount">0</span> characters (200 max)</span>
+                            </p>
+                            <p class="clearfix">
+                            	<label>Access Code</label>
+                                <span class="error">Code is Required</span>
+                                <input type="text" id="code" class="text-field span5" onfocus="if(this.value=='ex:Kaboom') this.value='';" 
+                                onblur="if(this.value=='') this.value='ex:Kaboom';" value="ex:Kaboom" />
+                            </p>
+                            <p>
+                            	<label>Location (Optional)</label>
+                                <input type="text" value="" class="text-field span5" />
+                            </p>
+                        </div><!--game-form -->
+                    
+                    </div>
+                    <div class="span9">
+                    	<div class="detail">
+                        	<strong>Photo:</strong> Uploading a photo lets you add custom
+                            brading to your game.
+                        </div>
+                        
+                        <div class="detail name">
+                        	<strong>Name:</strong> Game Names are used to indentify you game
+                            inside the app. Make it memorable!
+                        </div>
+                        
+                        <div class="detail description">
+                        	<strong>Description:</strong> The description also helps to indentify the
+                            game.but can be used to  describe game rules and 
+                            excite participants as well.
+                        </div>
+                        
+                        <div class="detail access">
+                        	<strong>Access Code:</strong> To make sure only the right teams join
+                            you game, you can password protect it.
+                        </div>
+                        
+                        <div class="detail location">
+                        	<strong>Location:</strong> Our apps use GPS to recommend the game
+                            to your participants.
+                        </div>
+                        
+                        <div class="save">
+                            <input type="submit" value="Save &amp; Continue" class="btn btn-success" />
+                        </div>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+                
+            </div><!--contents-wrap -->
+            
+            
+    	</div><!--main -->
+    </div>
+</div>
+<!--main content area (except header,footer) ends -->
+
+<div class="push"></div>
+
+</div>
+
+
+
+<!--footer area starts here -->
+<div class="footer-wrap">
+    <div class="container">
+    	<div class="footer">
+        	<div class="row">
+                <div class="span12">
+                    &copy; 2012, GooseChase Adventures, All Rights Reserved
+                </div>
+                <div class="span12 email-section">
+                    Email: <a href="#">hi@goosechase.com </a>
+                    Phone: <a href="#">1.415.547.0099</a>
+                </div>
+            </div>
+            
+            <div class="contct-us">
+            	<a href="#"><img src="images/contact-bg.png" alt="" /></a>
+            </div>
+            
+    	</div> 
+    </div>
+</div>
+<!--footer ends-->
+
+<div id="myModal" class="modal hide fade">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3>Warning</h3>
+    </div>
+	<div class="modal-body">
+        <p>If you click a different tab the information won't be saved</p>
+	</div>
+    <div class="modal-footer">
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/jquery1.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui-1.8.2.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery-custom-file-input.js"></script>
+
+<script type="text/javascript" src="js/widgets.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	$(function () {
+		
+		// popup lost data alert
+		$('.step-section a').click (function () {
+			var greaters = $("#game-name && #game-description && #code").val().length;
+			
+			if (greaters > 0) {
+				$('.sidebar-link-tigger').trigger('click');
+			}
+			else {
+			}
+			return false;
+		});
+		
+		
+		// Charcters count for textareas
+		$('#game-name').bind( 'keypress focus blur', function () {
+			var usedChar = $(this).val().length;
+			if (usedChar >= 40) {
+				$('#charecterCount').css({'color':'red'})
+				$('#charecterCount').html(usedChar+1)
+			}
+			else {
+				$('#charecterCount').html(usedChar+1).css({'color':'#000000'})
+			}
+		});
+		
+		$('#game-description').bind( 'keypress focus blur', function () {
+			var usedChar = $(this).val().length;
+			if (usedChar >= 200) {
+				$('#descCharecterCount')
+				.css({'color':'red'})
+				$('#descCharecterCount').html(usedChar+1)
+			}
+			else {
+				$('#descCharecterCount').html(usedChar+1).css({'color':'#000000'})
+			}
+			
+		});
+		// End of Charcters count for textareas		
+		
+		// upload button
+		$('.link').button().file().choose(function(e, input) {
+			var upload_value = input.val();
+			$('#upload-detail').html(upload_value).show();
+		});
+		
+		/* Additional section custom coding  */
+		$('.selector').click(function () {
+				
+			if($(this).hasClass('add')){		
+				$(this).removeClass('add');
+				$('#additional-detail').fadeIn(500);
+			}
+			else{
+				$(this).addClass('add');
+				$('#additional-detail').fadeOut(500);
+			}
+			return false;
+		});
+		
+		/* upload photo */
+		$('#upload').click (function () {
+			$('#upload-trigger').trigger('click');
+			return false;
+		});
+		
+		// textarea 2
+		$('.textarea2').focus(function() {
+			if($(this).val()=='ex: Last place grabs coffee for the winners!'){
+				$(this).val('');
+			}
+		});
+		$('textarea').blur(function() {
+			if($(this).val()==''){
+				$(this).val('ex: Last place grabs coffee for the winners!');
+			}
+		});
+		
+	});
+</script> 
+
+
+</body>
+</html>

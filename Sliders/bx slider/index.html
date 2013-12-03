@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Index Page Fixed</title>
+    <link type="text/css" rel="stylesheet" href="css/slider.css" />
+    
+</head>
+
+<body>
+
+<div class="slider-section">
+    <ul class="games-carousel clearfix" id="games-carousel">
+        <li>
+            <a href="http://www.rapid7.com/">
+                <img alt="" src="images/r7.jpg" />
+                <em>&nbsp;</em>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.solarwinds.com/">
+                <img alt="" src="images/logo.jpg" />
+                <em>&nbsp;</em>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.firemon.com/">
+                <img alt="" src="images/firemon-security.jpg" />
+                <em>&nbsp;</em>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.avecto.com/">
+                <img alt="" src="images/Avecto.jpg" />
+                <em>&nbsp;</em>
+            </a>
+        </li>
+        <li>
+            <a href="http://www.netclarity.com/">
+                <img alt="" src="images/netclaritylogo.jpg" />
+                <em>&nbsp;</em>
+            </a>
+        </li>
+    </ul>
+</div><!--slider-wrap --> 
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	$('#games-carousel').bxSlider({
+		displaySlideQty: 7,
+		ticker: true,
+	    tickerSpeed: 2500,
+		tickerHover: true
+	});
+	
+});
+</script>
+    
+</body>
+</html>
